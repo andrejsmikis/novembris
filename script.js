@@ -15,5 +15,5 @@ let tabula=[
     'sapņo': true
     }
     ];
-    let rindas=document.querySelector('.rindas');
-    rindas.innerHTML=tabula[1]['vards'];
+    let rinda=document.querySelector('.rinda');
+    rinda.innerHTML=tabula[1]['vards'];
