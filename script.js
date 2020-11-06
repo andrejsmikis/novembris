@@ -16,4 +16,13 @@ let tabula=[
     }
     ];
     let rinda=document.querySelector('.rinda');
-    rinda.innerHTML=tabula[1]['vards'];
+    for (let i=0;i<tabula.length;i++)
+    {
+        rinda.innerHTML+=`
+        <tr>
+            <td>${tabula[i]['vards']}</td>
+            <td>${tabula[i]['vecums']}</td>
+          </tr>
+        
+        `;      
+    }
