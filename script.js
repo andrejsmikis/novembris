@@ -17,6 +17,7 @@ let tabula=[
     ];
     let rinda=document.querySelector('.rinda');
     for (let i=0;i<tabula.length;i++)
+    if(tabula[i]['vecums']<30){
     {
         rinda.innerHTML+=`
         <tr>
@@ -24,5 +25,6 @@ let tabula=[
             <td>${tabula[i]['vecums']}</td>
           </tr>
         
-        `;      
+        `;  
+    }    
     }
